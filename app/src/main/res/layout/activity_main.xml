@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:clickable="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="My Nanodegree Apps!"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="wrap_content"
+        android:text="Spotify Streamer"
+        android:id="@+id/btn_Spotify"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickSpotify" />
+
+    <Button
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="wrap_content"
+        android:text="Scores App"
+        android:id="@+id/btn_Scores"
+        android:layout_below="@+id/btn_Spotify"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickScores" />
+
+    <Button
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="wrap_content"
+        android:text="Capstone"
+        android:id="@+id/btn_Capstone"
+        android:background="#779977"
+        android:layout_below="@+id/btn_XYZ"
+        android:layout_marginTop="22dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickCapstone" />
+
+    <Button
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="wrap_content"
+        android:text="XYZ Reader"
+        android:id="@+id/btn_XYZ"
+        android:layout_below="@+id/btn_BuildIt"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickXYZ" />
+
+    <Button
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="wrap_content"
+        android:text="Library App"
+        android:id="@+id/btn_Library"
+        android:layout_below="@+id/btn_Scores"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickLibrary"  />
+
+    <Button
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="wrap_content"
+        android:text="Built it Bigger"
+        android:id="@+id/btn_BuildIt"
+        android:layout_below="@+id/btn_Library"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickBuildIt"  />
+
+</RelativeLayout>
